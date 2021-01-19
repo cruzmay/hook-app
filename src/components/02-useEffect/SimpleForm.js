@@ -14,6 +14,14 @@ export const SimpleForm = () => {
         console.log('hey!')
     },[])
 
+    useEffect(()=>{
+        console.log('formState cambio')
+    },[formState])
+
+    useEffect(()=>{
+        console.log('email cambio')
+    },[email])
+
     const handleInputChange = ({target}) => {
         setformState({
             ...formState,
@@ -36,7 +44,7 @@ export const SimpleForm = () => {
                     onChange={handleInputChange}
                 />
             </div>
-            <div className="form-group">
+            <div className="form-group mt-2">
                 <input
                     type="text"
                     name="email"
