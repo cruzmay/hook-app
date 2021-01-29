@@ -5,7 +5,7 @@ import { GifReducers } from './GifReducers'
 import './styles.css'
 
 const init = () => {
-    return JSON.parse(localStorage.getItem('category'))
+    return JSON.parse(localStorage.getItem('category')) || []
 }
 
 export const GifExpertReducers = () => {

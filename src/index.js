@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { GifExpertReducers } from './components/GifExpertReducers/GifExpertReducers';
+import { MainApp } from './components/09-useContext/MainApp';
+// import { GifExpertReducers } from './components/GifExpertReducers/GifExpertReducers';
 // import { AppToDo } from './components/Practice-reducers/AppToDo';
 // import { CallbackHook } from './components/06-memo/CallbackHook';
 // import { Padre } from './components/07-tarea-memo/Padre';
@@ -20,7 +21,7 @@ import { GifExpertReducers } from './components/GifExpertReducers/GifExpertReduc
 
 
 ReactDOM.render(
-  < GifExpertReducers />,
+  < MainApp />,
   document.getElementById('root')
 );
 
