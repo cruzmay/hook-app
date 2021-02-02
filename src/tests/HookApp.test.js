@@ -6,5 +6,6 @@ describe('Pruebas sobre HookApp', () => {
     test('debe de mostrarse correctamente', () => {
         const wrapper = shallow(<HookApp/>)
         expect(wrapper).toMatchSnapshot()
+
     })
 })

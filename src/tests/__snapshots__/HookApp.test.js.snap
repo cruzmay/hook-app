@@ -3,7 +3,7 @@
 exports[`Pruebas sobre HookApp debe de mostrarse correctamente 1`] = `
 <div>
   <h1>
-    Hola mundo
+    Hola Mundo
   </h1>
 </div>
 `;
