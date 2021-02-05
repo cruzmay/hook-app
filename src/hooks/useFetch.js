@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react"
 
 export const useFetch = (url) => {
 
-
     const isMounted = useRef(true)
 
     const [state, setstate] = useState({
@@ -12,8 +11,10 @@ export const useFetch = (url) => {
     });
 
     useEffect(()=>{
-        isMounted.current = true;
-    })
+        return () => {
+            isMounted.current = false;
+        }
+    },[])
 
     useEffect(()=>{
 
@@ -27,7 +28,7 @@ export const useFetch = (url) => {
             .then(resp => resp.json())
             .then( data => {
 
-                if( isMounted.current){
+                if( isMounted.current ) {
                     setstate({
                     loading: false,
                     error: null,
@@ -44,6 +45,7 @@ export const useFetch = (url) => {
                 })
             })
     },[url])
+    
     return state;
 
 }

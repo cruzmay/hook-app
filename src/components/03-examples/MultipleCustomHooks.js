@@ -11,7 +11,7 @@ export const MultipleCustomHooks = () => {
     
     const {author, quote} = !!data && data[0]
     
-    console.log(author, quote)
+    
     return (
         <div>
             <h1>Breaking Bad quotes</h1>
