@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en <TodoListItem/> debe de mostrarse correctamente 1`] = `
+<li
+  className="list-group-item col-12 d-flex justify-content-between align-items-center"
+>
+  <p
+    className="col-4 m-0 task false "
+    onClick={[Function]}
+  >
+    2
+    .- 
+    Aprender Mongo
+  </p>
+  <button
+    className="btn btn-small btn-danger"
+    onClick={[Function]}
+  >
+    Borrar
+  </button>
+</li>
+`;
